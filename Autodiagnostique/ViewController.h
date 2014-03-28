@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WebViewController : UIViewController <UIWebViewDelegate> {
+    IBOutlet UIWebView *webView;
+}
+
+- (void)goHome;
+- (IBAction) home:(id)sender;
+- (IBAction) back:(id)sender;
 
 @end
